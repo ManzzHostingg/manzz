@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Salam Sambutan dengan Background Foto</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 50px;
+      
+      /* Ganti bagian ini sesuai nama file fotomu */
+      background-image: url('https://img1.pixhost.to/images/7357/624121085_manzz.jpg');
+      background-size: cover;       /* Supaya foto memenuhi layar */
+      background-position: center;  /* Posisikan di tengah */
+      background-repeat: no-repeat;
+      
+      /* Supaya tulisan tetap terlihat */
+      color: white;
+      text-shadow: 1px 1px 4px black;
+      min-height: 100vh; /* supaya penuh layar */
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    #kataKata {
+      margin-top: 20px;
+      display: none; /* awalnya disembunyikan */
+      font-size: 18px;
+      color: white;
+      text-shadow: 1px 1px 4px black;
+    }
+    button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      border: none;
+      background-color: rgba(0, 128, 0, 0.7);
+      color: white;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+    button:hover {
+      background-color: rgba(0, 100, 0, 0.9);
+    }
+  </style>
+</head>
+<body>
+
+  <h1>HALLO SAYANGKUU CINTAKUU</h1>
+  <p>GIMANA KABAR NYA SAYANG?? SEMOGA SEHAT SELALU YAA SAYANG,OOH IYA SAYANGG,BISA NGGAK BACA INI BENTARR</p>
+
+  <button id="btnLanjut">TEKAN INI CINTAKU🥰</button>
+
+  <div id="kataKata">
+    <p>sayang terima kasih yaa atas semua perhatin kamuu,kasih sayang kamu,effort kamu,and semuanya lah sayang</p>
+    <p>kenapa aku bilang makasih sayang?? karena kamu akuu tau makna cinta itu apa,makna kasih sayang setelah orang tua itu apa,makna tulus itu apa,makna pasangan itu apa</p>
+    <p>maka dari ituu,aku mohon yaa sayanhh,kalau aku ada kurang apa lagi kasih tau yaa sayang,kasih tau apa aja yang kamu nggak suka dari aku,dan aku mohon kamu jangan sering sedih yaa sayang,apabila kamu sedih,maka hati aku hancur rasanya sayang,jadii kalau ada apa apa kasih tau yaaa sayangg
+    LOVE YOU BABYY,TETAP SEMANGAT YAA SAYANG MENJALANI HARINYA
+    ByPacarmu:ManzzGanzz</p>
+  </div>
+
+  <script>
+    const btn = document.getElementById('btnLanjut');
+    const kataKata = document.getElementById('kataKata');
+
+    btn.addEventListener('click', () => {
+      kataKata.style.display = 'block'; // munculkan kata-kata
+      btn.style.display = 'none'; // sembunyikan tombol setelah klik
+    });
+  </script>
+
+</body>
+</html>
